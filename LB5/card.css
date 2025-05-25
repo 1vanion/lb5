@@ -1,0 +1,70 @@
+/* Основні стилі карток */
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Зображення в картці */
+.card img {
+    width: 250px;
+    max-width: 100%;
+    /* Зображення заповнює весь доступний простір */
+    height: 350px;
+    /* Зображення пропорційно збільшується */
+    border-radius: 5px;
+    /* Округлені кути для зображення */
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+}
+
+/* Заголовок в картці */
+.card h2 {
+    font-size: 1.2em;
+    /* Розмір шрифту заголовку */
+    margin-top: 15px;
+    /* Відступ зверху */
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+/* Опис в картці */
+.card p {
+    font-size: 1em;
+    /* Розмір шрифту тексту */
+    color: #555;
+    /* Колір тексту */
+    display: none;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-description {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.card button {
+    margin-top: 1px;
+    padding: 5px 10px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-color: #fff;
+}

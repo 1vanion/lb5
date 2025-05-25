@@ -1,0 +1,85 @@
+/* Загальні стилі для всіх пристроїв */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    flex: 1 1 300px;
+    /* Гнучкість елементу: збільшення, зменшення, мінімальна ширина */
+    margin: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Медіа-запит для мобільних пристроїв */
+@media only screen and (max-width: 600px) {
+    .item {
+        flex-basis: 100%;
+        /* Елементи на всю ширину рядка */
+    }
+}
+
+/* Медіа-запит для планшетів */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .item {
+        flex-basis: calc(50% - 20px);
+        /* Два елементи у рядку з відступами між ними */
+    }
+}
+
+/* Медіа-запит для настільних комп'ютерів */
+@media only screen and (min-width: 1025px) {
+    .item {
+        flex-basis: calc(33.33% - 20px);
+        /* Три елементи у рядку з відступами між ними */
+    }
+}
+
+#filter_panel {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    position: sticky;
+    top: 0;
+    border: 1px solid #ccc;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#filter_panel button {
+    margin: 2px;
+    padding: 7px 15px;
+    font-size: 16px;
+    background-color: #fff;
+    border-color: #ccc;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+#subscribe-modal {
+    font-size: 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#subscribe-modal button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0px 25px;
+    cursor: pointer;
+}

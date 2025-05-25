@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/LB5/card.css">
+    <link rel="stylesheet" href="/LB5/flex.css">
+    <link rel="stylesheet" href="/LB5/adds.css">
+    <script src="/LB5/script.js"></script>
+    <script src="/LB5/carts.js"></script>
+    <script src="/LB5/adss.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="filter_panel">
+        <button onclick="filterCards('all')">Усі</button>
+        <button onclick="filterCards('cherva')">Черви ♥</button>
+        <button onclick="filterCards('buba')">Бубни ♦</button>
+        <button onclick="filterCards('trefa')">Трефи ♣</button>
+        <button onclick="filterCards('pika')">Піки ♠</button>
+    </div>
+    <div id="card-container" class="container"></div>
+    <div id="subscribe-modal"
+        style="display:none; position:fixed; top:30%; left:40%; right:40%;  background:white; padding:20px; border:1px solid #ccc;">
+        <p>Підпишіться на оновлення!</p>
+        <button onclick="accept()">Прийняти</button>
+        <button onclick="decline()">Відхилити</button>
+        <script src="/LB5/alert.js"></script>
+    </div>
+    <div id="modal" class="modal">
+        <div>
+            <h3>Реклама</h3>
+            <p>Скористайся спеціальною пропозицією!</p>
+            <p id="timer">Можна закрити через 5 секунд</p>
+            <button id="closeBtn" class="close-btn" disabled>Закрити</button>
+        </div>
+    </div>
+</body>
+
+</html>
